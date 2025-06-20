@@ -8,4 +8,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FileHandler\FileHandler.csproj" />
+    <ProjectReference Include="..\GeneralInformation\GeneralInformation.csproj" />
+    <ProjectReference Include="..\QuestionHandler\QuestionHandler.csproj" />
+  </ItemGroup>
+
 </Project>
