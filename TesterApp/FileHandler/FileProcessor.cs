@@ -1,6 +1,6 @@
 ﻿namespace FileHandler
 {
-	public class FileProcessor
+	public class FileProcessor123
 	{
 		private const string Separator = "|";
 

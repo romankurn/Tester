@@ -1,11 +1,14 @@
-﻿using System.Text;
+﻿using FileHandler.Interfaces;
+using System.Text;
 
-namespace FileHandler
+namespace FileHandler.Services
 {
-	public class Cryptor123
+	public class Cryptor : ICryptor
 	{
 		public IEnumerable<string> Encrypt(IEnumerable<string> line)
 		{
+			if (line == null) throw new ArgumentNullException(nameof(line));
+
 			foreach (var column in line)
 			{
 				var bytes = Encoding.UTF8.GetBytes(column);
@@ -17,6 +20,8 @@ namespace FileHandler
 
 		public IEnumerable<string> Decrypt(IEnumerable<string> line)
 		{
+			if (line == null) throw new ArgumentNullException(nameof(line));
+
 			foreach (var column in line)
 			{
 				var bytes = Convert.FromBase64String(column);

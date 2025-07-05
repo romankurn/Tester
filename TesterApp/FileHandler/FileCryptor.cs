@@ -1,6 +1,6 @@
 ﻿namespace FileHandler
 {
-	public class FileCryptor
+	public class FileCryptor123
 	{
 		private FileProcessor _fileProcessor;
 		private Cryptor _cryptor;
